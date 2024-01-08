@@ -1,0 +1,37 @@
+/* CSS */
+.banner {
+    width: 100%;
+    background-color: #090030;
+    position: relative; /* Added position relative for proper positioning of buttons */
+  }
+  
+  .prev-button,
+  .next-button {
+    color: rgb(29, 29, 29);
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .banner-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px; /* Added padding for better spacing on mobile */
+    box-sizing: border-box;
+  }
+  
+  /* Media Query for Mobile */
+  @media (max-width: 768px) {
+    .prev-button,
+    .next-button {
+      font-size: 20px; /* Adjust button size for mobile */
+    }
+  
+    .banner-controls {
+      padding: 0 10px; /* Adjusted padding for smaller screens */
+    }
+  }
+  

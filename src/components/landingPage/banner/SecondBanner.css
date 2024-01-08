@@ -1,0 +1,192 @@
+.secondBanner {
+    position: relative;
+    width: 100%;
+    background-color: rgb(255, 54, 54);
+    height: 100vh;
+    overflow: hidden; 
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(2);
+  }
+}
+
+
+
+.secondBanner-img-container {
+    height: 100vh;
+     display: flex;
+     align-items: center;
+    justify-content: center;
+ }
+ .secondBanner-img{
+     width: 730px;
+    
+  
+ }
+ 
+ .secondBanner-bg-texts {
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     position: absolute;
+     top: 30%;
+     left: 33%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+ 
+   }
+   
+   .secondBanner-bg-text1 {
+     position: absolute;
+  width: max-content;  animation: slideInFromTop .5s forwards;
+     font-size: 200px;
+     color: white;
+     
+   }
+   
+   .secondBanner-bg-text2 {
+     width: max-content;
+     font-size: 220px;
+     color: white;
+     transform: translate(1%, 90%); animation: slideInFromBottom 1s forwards;
+   }
+   
+   
+ .secondBanner-bottom {
+     position: absolute;
+     bottom: 20px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     z-index: 2;
+   }
+   
+   .secondBanner-bottom-btns {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+   
+   .secondBanner-bottom-btn1{
+     width: 130px;
+     height: 40px;
+     padding: 11px 20px;
+     margin: 0 10px;
+     font-size: 16px;
+     background-color: #e0e0e0;
+     color: rgb(24, 24, 24);
+     border-radius: 5px;
+     border: #000000 solid 1px;
+     cursor: pointer;
+   }
+   .secondBanner-bottom-btn2 {
+     border: #e0e0e0 solid 1px;
+     width: 130px;
+     height: 40px;
+     padding: 11px 20px;
+     margin: 0 10px;
+     font-size: 16px;
+     background-color: rgb(19, 19, 19);
+     border-radius: 5px;
+     color: white;
+ 
+     cursor: pointer;
+   }
+ 
+   .secondBanner-bottom-texts {
+     position: absolute;
+ 
+     bottom: 20px;
+     right: 90px; /* Positioning at the right side */
+     color: white;
+     width: 470px; /* Adjust width as needed */
+    
+    
+     z-index: 2;
+   }
+   
+   .secondBanner-bottom-desc {
+     width: 100%; /* Utilize full width within the container */
+   }
+
+   @media (max-width: 1208px) {
+
+   }
+
+   @media (max-width: 868px) {
+    .secondBanner {
+      height: auto; /* Adjust height for smaller screens */
+      min-height: 100vh; /* Ensure a minimum height for smaller screens */
+      padding-bottom: 50px; /* Add space at the bottom for better mobile layout */
+    }
+  
+    .secondBanner-img {
+      width: 100%; /* Make the image responsive for smaller screens */
+      max-width: unset; /* Remove max-width for smaller screens */
+      animation: none; /* Disable animation for smaller screens */
+      transform: none; /* Remove transform for smaller screens */
+    }
+  
+
+    .secondBanner-bg-text2
+    {
+display: none;
+
+     
+    
+    }
+    .secondBanner-bg-text1
+  
+    {
+ display: none;
+     
+     
+    
+    }
+    .secondBanner-bottom {
+      position: static; /* Remove absolute positioning for mobile layout */
+      margin-top: 20px; /* Add margin at the top for better spacing */
+      display: flex;
+      flex-direction: column; /* Stack buttons and text vertically for mobile */
+      align-items: center; /* Center align content */
+    }
+  
+    .secondBanner-bottom-btns {
+      flex-direction: column; /* Stack buttons vertically for mobile */
+      margin-bottom: 10px; /* Add margin between buttons */
+    }
+  
+    .secondBanner-bottom-btn1,
+    .secondBanner-bottom-btn2 {
+      width: 100%; /* Set button width to full for mobile */
+      margin: 5px 0; /* Adjust margin for buttons */
+    }
+  
+    .secondBanner-bottom-texts {
+      position: static; /* Remove absolute positioning for mobile layout */
+      text-align: center; /* Center-align text */
+      margin-top: 20px; /* Add margin at the top for better spacing */
+      width: 100%; /* Set width to full for mobile */
+    }
+  
+    .secondBanner-bottom-desc {
+      width: 100%; /* Utilize full width within the container */
+    }
+
+   }

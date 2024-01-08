@@ -1,0 +1,114 @@
+.popularProducts{
+    background-color: #141414;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.popularProducts-heading > h2 {
+    font-size: 40px;
+    font-family: Inter;
+
+}
+.popularProducts-categories{
+    display: flex;
+    gap: 20px;
+    width: 40%;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.popularProducts-category > button{
+color: white;
+padding: 12px 33px;
+border-radius: 30px;
+font-size: 13px;
+    border: 2px solid white;
+    background-color: black;
+}
+
+.popularProducts-products {
+    display: flex;
+    gap: 20px;
+
+}
+
+.popularProducts-product {
+    position: relative;
+    text-align: center;
+    transition: filter 0.3s, font-size 0.3s; /* Smooth transition on hover */
+  }
+  
+  .popularProducts-product-img {
+    display: block;
+    height: 300px;
+    max-width: 430px;
+    transition: filter 0.3s; /* Smooth transition on hover */
+  }
+  
+  .popularProducts-product > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 10px;
+    transition: font-size 0.3s; /* Smooth transition on hover */
+  }
+  
+  .popularProducts-product:hover .popularProducts-product-img {
+    filter: blur(5px); /* Apply blur effect on hover */
+  }
+  
+  .popularProducts-product:hover p {
+    font-size: 20px; /* Increase font size on hover */
+  }
+
+  @media (max-width: 868px) {
+    .popularProducts-heading > h2 {
+      font-size: 30px; /* Adjust heading font size for mobile */
+    }
+  
+    .popularProducts-categories {
+      width: 80%; /* Increase width for better spacing on smaller screens */
+      flex-wrap: wrap; /* Allow categories to wrap on smaller screens */
+      gap: 10px; /* Reduce gap between categories */
+      justify-content: center; /* Center align categories */
+    }
+  
+    .popularProducts-category > button {
+      padding: 10px 25px; /* Adjust button padding for mobile */
+      font-size: 12px; /* Adjust button font size for mobile */
+    }
+  
+    .popularProducts-products {
+      flex-direction: column; /* Stack products vertically on mobile */
+      align-items: center; /* Center align products */
+    }
+  
+    .popularProducts-product {
+      width: 100%; /* Set product width to full on smaller screens */
+      max-width: 300px; /* Limit max-width for better mobile layout */
+      margin-bottom: 20px; /* Add margin between products */
+    }
+  
+    .popularProducts-product-img {
+      height: auto; /* Adjust image height */
+      max-width: 100%; /* Ensure images don't exceed their container width */
+    }
+  
+    .popularProducts-product > p {
+      font-size: 16px; /* Adjust product name font size for mobile */
+    }
+  
+    .popularProducts-product:hover .popularProducts-product-img {
+      filter: none; /* Remove image blur effect on mobile hover */
+    }
+  
+    .popularProducts-product:hover p {
+      font-size: 16px; /* Maintain font size on hover for mobile */
+    }
+  }

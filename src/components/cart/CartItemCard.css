@@ -1,0 +1,40 @@
+
+.CartItemCard{
+    display: flex;
+margin: 50px 0;
+    padding: 1vmax;
+    height: 8vmax;
+    align-items: center;   
+
+    box-sizing: border-box;
+}
+
+.cartItemCard > img {
+    width: 5vmax;
+}
+.cartItemCard > div {
+    display: flex;
+    margin: 0.3vmax 1vmax;
+}
+.cartContainer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.cartInput {
+    display: flex;
+    align-items: center;
+    height: 8vmax;
+}
+
+.cardInput > button {
+    border: none;
+}
+.cartGrossProfit {
+}
+
+.cartGrossProfitBox {
+    border-top: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}

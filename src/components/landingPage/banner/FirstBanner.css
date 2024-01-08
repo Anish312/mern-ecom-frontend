@@ -1,0 +1,189 @@
+.firstBanner{
+    position: relative;
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+    height: 100vh;
+    overflow: hidden; 
+}
+
+
+
+.firstBanner-img-container {
+   height: 100vh;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+}
+
+.firstBanner-img{
+    animation: decreaseWidth 2s linear forwards;
+    transform: rotate(-40deg);
+}
+
+@keyframes decreaseWidth {
+  from {
+   width: 690px;
+  }
+  to {
+     width: 470px;
+  }
+}
+.firstBanner-bg-texts {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+  }
+  
+  .firstBanner-bg-text1 {
+    position: absolute;
+ width: max-content;
+    font-size: 200px;
+    color: white; 
+           animation: textAnimation 1s forwards 0.5s; /* Delay text2 animation */
+
+  }
+
+
+  @keyframes textAnimation {
+  0% {
+    opacity: 0;
+
+  }
+  100% {
+    opacity: 1;
+  
+  }
+}
+  .firstBanner-bg-text2 {  
+    animation: textAnimation 1s forwards 0.5s; /* Delay text2 animation */
+
+    width: max-content;
+    font-size: 220px;
+    color: rgb(68, 68, 68);
+
+    margin-left: 10px; 
+  }
+  
+  
+.firstBanner-bottom {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .firstBanner-bottom-btns {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .firstBanner-bottom-btn1{
+    width: 130px;
+    height: 40px;
+    padding: 11px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #e0e0e0;
+    color: rgb(24, 24, 24);
+    border-radius: 5px;
+    border: #000000 solid 1px;
+    cursor: pointer;
+  }
+  .firstBanner-bottom-btn2 {
+    border: #e0e0e0 solid 1px;
+    width: 130px;
+    height: 40px;
+    padding: 11px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: rgb(19, 19, 19);
+    border-radius: 5px;
+    color: white;
+
+    cursor: pointer;
+  }
+
+  .firstBanner-bottom-texts {
+    position: absolute;
+
+    bottom: 20px;
+    right: 90px; /* Positioning at the right side */
+    color: white;
+    width: 470px; /* Adjust width as needed */
+   
+   
+    z-index: 2;
+  }
+  
+  .firstBanner-bottom-desc {
+    width: 100%; /* Utilize full width within the container */
+  }
+
+  @media (max-width: 768px) {
+    .firstBanner {
+      height: auto; /* Adjust height for smaller screens */
+      min-height: 100vh; /* Ensure a minimum height for smaller screens */
+      padding-bottom: 50px; /* Add space at the bottom for better mobile layout */
+    }
+  
+    .firstBanner-img {
+      width: 100%; /* Make the image responsive for smaller screens */
+      max-width: unset; /* Remove max-width for smaller screens */
+      animation: none; /* Disable animation for smaller screens */
+      transform: none; /* Remove transform for smaller screens */
+    }
+  
+
+    .firstBanner-bg-text2
+    {
+display: none;
+
+     
+    
+    }
+    .firstBanner-bg-text1
+  
+    {
+ display: none;
+     
+     
+    
+    }
+    .firstBanner-bottom {
+      position: static; /* Remove absolute positioning for mobile layout */
+      margin-top: 20px; /* Add margin at the top for better spacing */
+      display: flex;
+      flex-direction: column; /* Stack buttons and text vertically for mobile */
+      align-items: center; /* Center align content */
+    }
+  
+    .firstBanner-bottom-btns {
+      flex-direction: column; /* Stack buttons vertically for mobile */
+      margin-bottom: 10px; /* Add margin between buttons */
+    }
+  
+    .firstBanner-bottom-btn1,
+    .firstBanner-bottom-btn2 {
+      width: 100%; /* Set button width to full for mobile */
+      margin: 5px 0; /* Adjust margin for buttons */
+    }
+  
+    .firstBanner-bottom-texts {
+      position: static; /* Remove absolute positioning for mobile layout */
+      text-align: center; /* Center-align text */
+      margin-top: 20px; /* Add margin at the top for better spacing */
+      width: 100%; /* Set width to full for mobile */
+    }
+  
+    .firstBanner-bottom-desc {
+      width: 100%; /* Utilize full width within the container */
+    }
+  }

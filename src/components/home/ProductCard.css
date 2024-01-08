@@ -1,0 +1,8 @@
+.productCard{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+  margin: 10px 10px;
+    background-color: blanchedalmond;
+    padding: 20px 10px;
+}
