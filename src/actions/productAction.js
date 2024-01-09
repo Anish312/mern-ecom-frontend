@@ -1,4 +1,5 @@
 import axios from "axios";
+import { base_url } from "../urls";
 import {  ALL_PRODUCT_FAIL,
     ALL_PRODUCT_REQUEST,
     ALL_PRODUCT_SUCCESS,
@@ -34,10 +35,10 @@ import {  ALL_PRODUCT_FAIL,
    try {
      dispatch({ type: ALL_PRODUCT_REQUEST });
 
-     let link = `/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`;
+     let link = `${base_url}/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`;
 
      if (category) {
-       link = `/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}&ratings[gte]=${ratings}`;
+       link = `${base_url}/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&category=${category}&ratings[gte]=${ratings}`;
      }
 
      const { data } = await axios.get(link);
@@ -66,7 +67,7 @@ export const getProductDetails = (id) => async (dispatch) => {
     try {
       dispatch({ type: PRODUCT_DETAILS_REQUEST });
   
-      const { data } = await axios.get(`/api/v1/product/${id}`);
+      const { data } = await axios.get(`${base_url}/api/v1/product/${id}`);
   
       dispatch({
         type: PRODUCT_DETAILS_SUCCESS,
