@@ -44,7 +44,7 @@ function Cart() {
 
             <div className='cart-product-row'>
             {cartItems &&
-          cartItems.map((item) => (
+        cartItems.map((item) => (
             <div className="cartContainer" key={item.product}>
               <CartItemCard item={item} deleteCartItems={deleteCartItems} />
 
