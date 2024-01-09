@@ -19,8 +19,9 @@ import Cart from './components/cart/Cart';
 import Shipping from './components/shipping/Shipping';
 import ConfirmOrder from './components/cart/ConfirmOrder';
 import Cart1 from './components/cart/Cart';
+import axios from 'axios';
 function App() {
-
+  axios.defaults.baseURL = 'https://shoes-server3.onrender.com'
 
   const { isAuthenticated, user } = useSelector((state) => state.user);
 
@@ -36,6 +37,7 @@ function App() {
 }, [])
   return (
     <div className="app">
+      sd
       <Router>
               <Header isAuthenticated={isAuthenticated} user={user}/>
               <Routes>
