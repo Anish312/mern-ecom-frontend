@@ -32,7 +32,7 @@ function App() {
       families : ["Roboto" , "Droid Sans" , "Chilanka"]
     }
   })
-
+console.log("hii")
   store.dispatch(loadUser())
 }, [])
   return (
