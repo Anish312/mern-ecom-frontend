@@ -37,7 +37,7 @@ console.log("hii")
 }, [])
   return (
     <div className="app">
-      sd
+    
       <Router>
               <Header isAuthenticated={isAuthenticated} user={user}/>
               <Routes>
