@@ -38,7 +38,7 @@ function PopularProducts() {
 
             <div className='popularProducts-product'> 
 
-                <img className="popularProducts-product-img" src="https://gearpatrol.com/wp-content/uploads/2019/09/Air-Jordan-XXXIV-gear-patrol-full-lead.jpg"   alt=""/>
+                <img className="popularProducts-product-img" src="https://wallpapercave.com/wp/3eaIVZM.jpg"   alt=""/>
                 <p>Men's</p>
 
             </div>                </Link>

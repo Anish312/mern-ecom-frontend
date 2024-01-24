@@ -17,7 +17,7 @@ function WeeklyPick() {
 
        <div className='weeklyPick-main'>
         <div className='weeklyPick-img-container'>
-            <img src="https://gearpatrol.com/wp-content/uploads/2019/09/Air-Jordan-XXXIV-gear-patrol-full-lead.jpg" className='weeklyPick-img' alt=""/>
+            <img src="https://wallpapercave.com/wp/3eaIVZM.jpg" className='weeklyPick-img' alt=""/>
         </div>
 
         <div className='weeklyPick-product-details'>
