@@ -6,7 +6,8 @@ function Footer() {
         <div class="container">
           <div class="footer-content">
             <div class="footer-logo">
-              Logo
+            <img src="https://www.nicepng.com/png/full/2-26056_nike-logo-png.png" alt="" width={55} style={{margin: " 30px 20px"}}/>
+
             </div>
             <div class="footer-links">
               <ul class="footer-menu">

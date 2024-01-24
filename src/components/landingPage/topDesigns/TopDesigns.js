@@ -45,8 +45,8 @@ function TopDesigns() {
                 <div className='topDesigns-right-boxes' >
                   <div style={{marginTop:`${finalMargin}px`}}>  
 
-                   {
-                    products.map((product) => (
+                   {/* {
+                    products.slice(0, 3).map((product) => (
                           <div className='topDesigns-right-box' >
                     <img src={product.image[0].url} alt=""   className='topDesigns-right-box-img'/>
                       <div  className='topDesigns-right-box-texts'>
@@ -60,29 +60,29 @@ function TopDesigns() {
                    }
                  
                
-               
+                */}
                     <div className='topDesigns-right-box'>
                     <img src={firstBannerImg} alt=""  className='topDesigns-right-box-img' />
                       <div  className='topDesigns-right-box-texts'>
                         <p>$ 3003</p>
-                        <p>dfds sdfsdf dsfsdf<br/>
-                        sdfsdf</p>
+                        <p>Air Black<br/>
+                        Z440</p>
                       </div>
                     </div>
                     <div className='topDesigns-right-box'>
                     <img src={firstBannerImg} alt=""  className='topDesigns-right-box-img' />
                       <div  className='topDesigns-right-box-texts'>
                         <p>$ 3004</p>
-                        <p>dfds sdfsdf dsfsdf<br/>
-                        sdfsdf</p>
+                        <p>Classic Nike<br/>
+                        Mens</p>
                       </div>
                     </div>
                     <div className='topDesigns-right-box'>
                     <img src={firstBannerImg} alt="" className='topDesigns-right-box-img'/>
                       <div  className='topDesigns-right-box-texts'>
                         <p>$ 3003</p>
-                        <p>dfds sdfsdf dsfsdf<br/>
-                        sdfsdf</p>
+                        <p>Red Thunder<br/>
+                        007</p>
                       </div>
                     </div>
                     </div>

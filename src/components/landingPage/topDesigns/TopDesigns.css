@@ -1,126 +1,128 @@
-.topDesigns{
-    background-color: #1e1e1e;
-    display: flex;
-    padding: 100px 0;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
+.topDesigns {
+  background-color: #1e1e1e;
+  display: flex;
+  padding: 100px 0;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
 }
 
-.topDesigns-container{
-    width: 65%;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.topDesigns-container {
+  width: 65%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .topDesigns-left > div {
-    font-size: 69px;
-    font-family: Inter;
-    mix-blend-mode: color-dodge;
-    mix-blend-mode: lighten;    
+  font-size: 69px;
+  font-family: Inter;
+  mix-blend-mode: color-dodge;
+  mix-blend-mode: lighten;
 }
 
 .topDesigns-right {
-
 }
 
 .topDesigns-right-boxes {
-width: 340px;
-display: flex;
-flex-direction: column;
-align-items: center;
-      overflow: hidden;
-    height: 500px;
-    mask-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.1) 5%,
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 
-        rgba(0, 0, 0, 0.2) 10%,
-        rgba(0, 0, 0, 1) 40%,
-        rgba(0, 0, 0, 1) 70%,
-        rgba(0, 0, 0, 0.2) 90%,
-        rgba(0, 0, 0, 0.1) 95%,
-        rgba(0, 0, 0, 0) 100%
-    );
+
 }
-.topDesigns-right-box{
-    background: linear-gradient(256deg, rgba(130, 130, 130, 0.12) -6.15%, rgba(130, 130, 130, 0.54) -6.15%, rgba(130, 130, 130, 0.20) -6.15%, rgba(130, 130, 130, 0.06) -6.15%, rgba(130, 130, 130, 0.21) 39.75%, rgba(130, 130, 130, 0.20) 55.05%, rgba(130, 130, 130, 0.19) 70.35%, rgba(130, 130, 130, 0.19) 85.64%, rgba(130, 130, 130, 0.12) 100.94%, rgba(130, 130, 130, 0.00) 131.54%);
-    width: 220px;
-    display: flex;
-    height: 95px;
-    padding: 25px 20px; 
-border-radius: 5px;
-    align-items: center;
-    justify-content: center;
-    margin: 45px 0; 
+.topDesigns-right-box {
+  background: linear-gradient(
+    256deg,
+    rgba(130, 130, 130, 0.12) -6.15%,
+    rgba(130, 130, 130, 0.54) -6.15%,
+    rgba(130, 130, 130, 0.2) -6.15%,
+    rgba(130, 130, 130, 0.06) -6.15%,
+    rgba(130, 130, 130, 0.21) 39.75%,
+    rgba(130, 130, 130, 0.2) 55.05%,
+    rgba(130, 130, 130, 0.19) 70.35%,
+    rgba(130, 130, 130, 0.19) 85.64%,
+    rgba(130, 130, 130, 0.12) 100.94%,
+    rgba(130, 130, 130, 0) 131.54%
+  );
+  width: 220px;
+  display: flex;
+  height: 95px;
+  padding: 25px 20px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  margin: 45px 0;
 }
-.topDesigns-right-box-texts{
+.topDesigns-right-box-texts {
   margin-left: -13px;
 }
 
 .topDesigns-right-box-img {
-    width: calc(43% + 30px); /* Increase width to include the outside positioning */
-    height: 50px;
-    transform: rotate(-25deg); /* Rotate the image */
-    position: relative;
-    left: -60px;
-    bottom:-5px; /* Position the image slightly outside the box */
+  width: calc(
+    43% + 30px
+  ); /* Increase width to include the outside positioning */
+  height: 50px;
+  transform: rotate(-25deg); /* Rotate the image */
+  position: relative;
+  left: -60px;
+  bottom: -5px; /* Position the image slightly outside the box */
+}
+
+@media (max-width: 768px) {
+  .topDesigns {
+    padding: 50px 0; /* Reduce padding for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+    min-height: auto; /* Remove minimum height */
   }
 
-  @media (max-width: 768px) {
-    .topDesigns {
-      padding: 50px 0; /* Reduce padding for smaller screens */
-      height: auto; /* Allow height to adjust based on content */
-      min-height: auto; /* Remove minimum height */
-    }
-  
-    .topDesigns-container {
-      width: 90%; /* Increase container width for better spacing on smaller screens */
-      flex-direction: column; /* Stack elements vertically for mobile */
-      align-items: center; /* Center align elements */
-      text-align: center; /* Center-align text */
-    }
-  
-    .topDesigns-left > div {
-      font-size: 40px; /* Adjust font size for smaller screens */
-    }
-  
-    .topDesigns-right {
-      margin-top: 20px; /* Add margin at the top for better spacing */
-    }
-  
-    .topDesigns-right-boxes {
-      width: 100%; /* Set width to full for smaller screens */
-      mask-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.1) 5%,
+  .topDesigns-container {
+    width: 90%; /* Increase container width for better spacing on smaller screens */
+    flex-direction: column; /* Stack elements vertically for mobile */
+    align-items: center; /* Center align elements */
+    text-align: center; /* Center-align text */
+  }
 
-        rgba(0, 0, 0, 0.2) 10%,
-        rgba(0, 0, 0, 1) 40%,
-        rgba(0, 0, 0, 1) 70%,
-        rgba(0, 0, 0, 0.2) 90%,
-        rgba(0, 0, 0, 0.1) 95%,
-        rgba(0, 0, 0, 0) 100%
+  .topDesigns-left > div {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+
+  .topDesigns-right {
+    margin-top: 20px; /* Add margin at the top for better spacing */
+  }
+
+  .topDesigns-right-boxes {
+    width: 100%; /* Set width to full for smaller screens */
+    mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.1) 5%,
+
+      rgba(0, 0, 0, 0.2) 10%,
+      rgba(0, 0, 0, 1) 40%,
+      rgba(0, 0, 0, 1) 70%,
+      rgba(0, 0, 0, 0.2) 90%,
+      rgba(0, 0, 0, 0.1) 95%,
+      rgba(0, 0, 0, 0) 100%
     );
-      height: 500px;
-      overflow: hidden; /* Remove overflow */
-    }
-  
-    .topDesigns-right-box {
-      width: 80%; /* Adjust box width for smaller screens */
-      margin: 20px auto; /* Center align boxes */
-    }
-  
-    .topDesigns-right-box-img {
-      width: 50%; /* Adjust image width for smaller screens */
-      height: 50px;
-      transform: none; /* Reset image transformation */
-      position: relative;
-      left: 0;
-      bottom: 0; /* Reset image position */
-    }
+    height: 500px;
+    overflow: hidden; /* Remove overflow */
   }
+
+  .topDesigns-right-box {
+    width: 80%; /* Adjust box width for smaller screens */
+    margin: 20px auto; /* Center align boxes */
+  }
+
+  .topDesigns-right-box-img {
+    width: 50%; /* Adjust image width for smaller screens */
+    height: 50px;
+    transform: none; /* Reset image transformation */
+    position: relative;
+    left: 0;
+    bottom: 0; /* Reset image position */
+  }
+}

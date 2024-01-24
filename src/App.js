@@ -35,6 +35,7 @@ function App() {
 console.log("hii")
   store.dispatch(loadUser())
 }, [])
+  
   return (
     <div className="app">
     

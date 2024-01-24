@@ -6,24 +6,24 @@ function CartItemCard({item , deleteCartItems}) {
 
         <div className='CartItemCard'>
                 <div className='cart-product-img-div'>
-                    <img  className='cart-product-img' src="https://gearpatrol.com/wp-content/uploads/2019/09/Air-Jordan-XXXIV-gear-patrol-full-lead.jpg" alt=""/>
+                    <img  className='cart-product-img' src={item.image}  alt=""/>
                 </div>
                 <div className='cart-product-details'>
                   
                     <h3 className='cart-product-name'>{item.name}</h3>
                     <h4 className='cart-product-category'>Men's Shoes</h4>
-                    <label for="size" >Choose a Size:</label>
+                    {/* <label for="size" >Choose a Size:</label>
 
                             <select  className='cart-product-category-lable' name="cars" id="cars">
                             <option value="volvo">Volvo</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
                             <option value="audi">Audi</option>
-                            </select>
+                            </select> */}
 
                     
                     <div className='cart-product-btns'>
-                        <button onClick={() => deleteCartItems(item.product)}>Remove</button>
+                        <button v className='cart-remove-btn' onClick={() => deleteCartItems(item.product)}>Remove</button>
                     </div>
 
                 </div>

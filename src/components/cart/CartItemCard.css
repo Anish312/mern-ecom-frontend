@@ -32,7 +32,14 @@ margin: 50px 0;
 }
 .cartGrossProfit {
 }
-
+.cart-product-btns{
+    margin-top: 5px;
+    
+}
+.cart-remove-btn{
+    padding: 3px 5px ;
+    font-size: 12px;
+}
 .cartGrossProfitBox {
     border-top: 1px solid red;
     display: flex;

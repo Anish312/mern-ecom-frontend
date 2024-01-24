@@ -30,6 +30,7 @@ justify-content: space-between;
 
 .cart-product-row{
     display: flex;
+    flex-direction: column;
 }
 .CartItemCard-product-row{
 display: flex;
@@ -64,6 +65,9 @@ justify-content: space-between;
 .cart-summary-subtotal{
     display: flex;
     justify-content: space-between;
+}
+.cartSubTotal{
+    margin-left: 15px;
 }
 .cart-summary-shipping{
     display: flex;

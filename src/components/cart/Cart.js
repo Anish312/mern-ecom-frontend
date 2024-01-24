@@ -62,7 +62,7 @@ function Cart() {
                 >
                   +
                 </button>
-                <p className="cartSubTotal">{`${item.price * item.quantity}`}</p>
+                <p className="cartSubTotal"> ${ `${item.price * item.quantity}`}</p>
               </div>
             </div>
           ))}

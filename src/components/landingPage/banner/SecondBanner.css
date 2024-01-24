@@ -113,9 +113,9 @@
      position: absolute;
  
      bottom: 20px;
-     right: 90px; /* Positioning at the right side */
+     right: 66px; /* Positioning at the right side */
      color: white;
-     width: 470px; /* Adjust width as needed */
+     width: 420px; /* Adjust width as needed */
     
     
      z-index: 2;
