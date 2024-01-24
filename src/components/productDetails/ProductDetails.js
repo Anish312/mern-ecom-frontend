@@ -95,7 +95,7 @@ const decreaseQuantity = () =>{
               className="productDetails-img"
             />
           )}
-            <button onClick={showNextImage}>Next</button>
+            {/* <button onClick={showNextImage}>Next</button> */}
         </div>
     <div class="right">
       <div class="product-info">
@@ -137,7 +137,7 @@ const decreaseQuantity = () =>{
         </ul>
         <span class="foot"><i class="fa fa-shopping-bag"></i>Buy Now</span>
         <span class="foot"   
-                    onClick={addToCartHandler}><i class="fa fa-shopping-cart" ></i>Add TO Cart</span>
+                    onClick={addToCartHandler}><i class="fa fa-shopping-cart" ></i>Add To Cart</span>
       </div>
     </div>
     </div>
