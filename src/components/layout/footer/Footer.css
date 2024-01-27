@@ -8,7 +8,6 @@
 }
   
 .container {
-    width: 100%;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -78,9 +77,12 @@
     .footer-menu{
         text-align: left;
     }
-    .footer-menu li {
+    .footer-menu > li {
       display: block;
       margin-bottom: 10px;
+    }
+    .footer-bottom {
+   display: none;
     }
 }
   
@@ -88,3 +90,5 @@
     position: absolute;
     bottom: 10px;
 }
+
+

@@ -24,7 +24,7 @@ function Header({isAuthenticated , user}) {
 
         <div  className='header-left'>
 
-         <img src="https://www.nicepng.com/png/full/2-26056_nike-logo-png.png" alt="" width={85} style={{margin: " 30px 20px"}}/>
+         <img src="https://www.nicepng.com/png/full/2-26056_nike-logo-png.png" alt="" className='header-logo'/>
         </div>
         </Link>
 

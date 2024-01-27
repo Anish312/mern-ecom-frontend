@@ -255,3 +255,46 @@ padding: 100px 0;
   width: 305px;
   z-index: 10;
 }
+
+
+@media (max-width: 768px) {
+  .ProductDetails {
+    padding: 3vmax; /* Adjust padding for smaller screens */
+  }
+
+  .card {
+    flex-direction: column; /* Stack card elements vertically on smaller screens */
+  }
+
+  .productDetails-card-container {
+    flex-direction: column; /* Stack card container elements vertically on smaller screens */
+  }
+
+  .left {
+    width: 92%;
+    height: auto;
+    padding: 15px;
+    margin-left: 0;
+    border-radius: 0; /* Remove border-radius for smaller screens */
+    position: relative;
+  }
+
+  .right {
+    width: 95%;
+    padding: 10px;
+    margin-left: 0;
+  }
+
+  .product-info {
+    position: static; /* Remove absolute positioning for smaller screens */
+    margin: 0;
+    width: 100%;
+  }
+
+  .productDetails-img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Additional styles or adjustments as needed for smaller screens */
+}
