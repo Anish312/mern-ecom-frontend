@@ -8,7 +8,10 @@ margin: 50px 0;
 
     box-sizing: border-box;
 }
-
+.cart-product-img {
+    width: 250px;
+    margin-right: 40px;
+}
 .cartItemCard > img {
     width: 5vmax;
 }

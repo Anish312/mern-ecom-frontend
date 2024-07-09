@@ -75,7 +75,7 @@ function Cart() {
             <div className='cart-summary-calculation'>
                 <div className='cart-summary-subtotal'>
                     <h5>Subtotal</h5>
-                    <span>${`${
+                    <span>$ {`${
               cartItems.reduce(
                 (acc, item) => acc + item.quantity * item.price,
                 0
@@ -84,19 +84,19 @@ function Cart() {
                 </div>
                 <div className='cart-summary-shipping'>
                     <h5>Shipping Charge</h5>
-                    <span>$333</span>
+                    <span>$ 20</span>
                 </div>
-                <div className='cart-summary-tax'>
+                {/* <div className='cart-summary-tax'>
                     <h5>Tax</h5>
                     <span>$333</span>
-                </div>
+                </div> */}
             </div>
 
             <div className='cart-summary-total-div'>
                 <h3>Total</h3>
-                <p>${`${
+                <p>$ {`${
               cartItems.reduce(
-                (acc, item) => acc + item.quantity * item.price,
+                (acc, item) => acc + (item.quantity * item.price ) +20,
                 0
               )
             }`}</p>

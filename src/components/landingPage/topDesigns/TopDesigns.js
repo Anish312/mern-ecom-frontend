@@ -26,7 +26,6 @@ function TopDesigns() {
 
   const scrollDown = () => {
     if(finalMargin >-500 ) {
-      console.log(finalMargin)
           setFinalMargin((prevMargin) => prevMargin - 100); // Adjust the scrolling distance
 
     }
@@ -35,7 +34,6 @@ function TopDesigns() {
   const scrollUp = () => {
     if(finalMargin <0 ) {
 
-    console.log(finalMargin)
 
       setFinalMargin((prevMargin) => prevMargin + 100); // Adjust the scrolling distance
     }
