@@ -25,12 +25,21 @@ function TopDesigns() {
   const [finalMargin, setFinalMargin] = useState(0);
 
   const scrollDown = () => {
-    setFinalMargin((prevMargin) => prevMargin - 100); // Adjust the scrolling distance
-  };
+    if(finalMargin >-500 ) {
+      console.log(finalMargin)
+          setFinalMargin((prevMargin) => prevMargin - 100); // Adjust the scrolling distance
 
+    }
+  };
+ 
   const scrollUp = () => {
-   
-    setFinalMargin((prevMargin) => prevMargin + 100); // Adjust the scrolling distance
+    if(finalMargin <0 ) {
+
+    console.log(finalMargin)
+
+      setFinalMargin((prevMargin) => prevMargin + 100); // Adjust the scrolling distance
+    }
+
   };
   return (
     <div className='topDesigns'>
@@ -70,7 +79,15 @@ function TopDesigns() {
                       </div>
                     </div>
                     <div className='topDesigns-right-box'>
-                    <img src={firstBannerImg} alt=""  className='topDesigns-right-box-img' />
+                    <img src="https://www.nicepng.com/png/full/78-789462_nike-shoes-png.png" alt="" className='topDesigns-right-box-img'/>
+                      <div  className='topDesigns-right-box-texts'>
+                        <p>$ 3003</p>
+                        <p>Red Thunder<br/>
+                        007</p>
+                      </div>
+                    </div>
+                    <div className='topDesigns-right-box'>
+                    <img src="https://www.pinclipart.com/picdir/big/258-2583056_nike-mens-nike-flex-2017-rn-running-shoe.png" alt=""  className='topDesigns-right-box-img' />
                       <div  className='topDesigns-right-box-texts'>
                         <p>$ 3004</p>
                         <p>Classic Nike<br/>
@@ -78,13 +95,15 @@ function TopDesigns() {
                       </div>
                     </div>
                     <div className='topDesigns-right-box'>
-                    <img src={firstBannerImg} alt="" className='topDesigns-right-box-img'/>
+                    <img src="https://www.nicepng.com/png/full/78-789462_nike-shoes-png.png" alt="" className='topDesigns-right-box-img'/>
                       <div  className='topDesigns-right-box-texts'>
                         <p>$ 3003</p>
                         <p>Red Thunder<br/>
                         007</p>
                       </div>
                     </div>
+                  
+                   
                     </div>
                 </div>              
                 <div className='scroll-buttons'>
