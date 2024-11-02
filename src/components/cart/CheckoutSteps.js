@@ -27,7 +27,7 @@ import AccountBalanceIcon from "@material-ui/icons/AccountBalance"
       boxSizing: 'border-box',
     }
   return (
-    <Fragment>
+    <div style={{background:"black"}}> 
        <Stepper alternativeLable activeStep={activeStep} style={stepStyle}>
          {steps.map((item ,index) => (
             <Step key={index} active={activeStep === index ? true : false}
@@ -39,7 +39,7 @@ import AccountBalanceIcon from "@material-ui/icons/AccountBalance"
             </Step>
          ))}
        </Stepper>
-    </Fragment>
+    </div>
   )
 }
 

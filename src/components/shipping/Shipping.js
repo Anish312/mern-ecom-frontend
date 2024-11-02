@@ -27,7 +27,7 @@ function Shipping() {
      navigate('/order/confirm')
    }
   return (
-    <Fragment>
+    <div style={{paddingTop:"80px" , background:"black"}}>
 
       <MetaData title="Shipping Details"/>
         
@@ -49,7 +49,7 @@ function Shipping() {
             </div>
 
             <div>
-              <p>city</p>
+              <p>City</p>
               <input
                 type="text"
                 name=""
@@ -59,7 +59,7 @@ function Shipping() {
             </div>
 
             <div>
-              <p>pinCode</p>
+              <p>PinCode</p>
               <input
                 type="number"
                 name=""
@@ -68,7 +68,7 @@ function Shipping() {
               />
             </div>
             <div>
-              <p>PhoneNo</p>
+              <p>Phone No.</p>
               <input
                 type="number"
                 name=""
@@ -79,7 +79,7 @@ function Shipping() {
 
            
             <div>
-              <p>country</p>
+              <p>Country</p>
               <select
                 type="text"
                 name=""
@@ -117,7 +117,7 @@ function Shipping() {
           </form>
         </div>
       </div>
-    </Fragment>
+    </div>
   );
 }
 

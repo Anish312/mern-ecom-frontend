@@ -10,3 +10,9 @@
 .MuiStepConnector-active, .MuiStepConnector-completed {
     background-color: tomato;
 }
+.stepper {
+    padding: 20px 0; /* Add padding for better spacing */
+  }
+  
+  /* You can add more specific styles if required */
+  

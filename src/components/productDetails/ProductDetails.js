@@ -108,8 +108,8 @@ const decreaseQuantity = () =>{
         <div class="details">
           <h3 className="productDetails-h3">Winter Collection</h3>
           <h2 className="productDetails-h2">Men Black Sneakers</h2>
-          <h4 className="productDetails-h4"><span class="fa fa-dollar"></span>{product.price}</h4>
-          <h4 class="dis"><span class="fa fa-dollar"></span>200</h4>
+          <h4 className="productDetails-h4"><span class="fa fa-dollar"></span>{product.price} $</h4>
+          <h4 class="dis"><span class="fa fa-dollar"></span>200 $</h4>
         </div>
         <ul className="productDetails-ul">
           <li className="productDetails-li">SIZE</li>
